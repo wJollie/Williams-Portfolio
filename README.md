@@ -5,7 +5,7 @@ The code in this repo is original, with help from google/chatgpt for syntax
 https://wjollie.github.io/Williams-Portfolio/
 
 
-[Capture](https://github.com/wJollie/Williams-Portfolio/assets/61369939/34647556-b7e7-42ec-be75-b27522cc62d7)
+![Capture](https://github.com/wJollie/Williams-Portfolio/assets/61369939/34647556-b7e7-42ec-be75-b27522cc62d7)
 
 
 
