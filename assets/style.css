@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+/* Website Title and Blue Bar at top */
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    background-color: rgb(40, 97, 133);
+    color: gainsboro;
+    font-size: xx-large;
+    
+}
+/* top pfp style */
+#top-pfp {
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+}
+/* untitled list navbar style */
+ul.navbar {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0;
+    margin: 0;
+    background-color: rgb(40, 97, 133);
+    color: gainsboro;
+}
+/* list item navbar style */
+ul.navbar li {
+    margin-right: 75px;
+    font-size: xx-large;
+    
+}
+/* makes it so navbar links dont turn purple */
+ul.navbar li a:visited {
+    color: gainsboro;
+}
+/* Card Style for Contact me and Bio */
+.card {
+    background-color: gainsboro;
+    border-radius: 15px;
+    box-shadow: 0 10px 15px grey;
+    padding: 50px;
+    margin: 20px;
+}
+/* Header Text for example card */
+.sectionHeader {
+    padding-right: 20px;
+    font-size: xx-large;
+}
+
+/* The Card holding the example work cards */
+.example-card {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    background-color: gainsboro;
+    border-radius: 15px;
+    box-shadow: 0 10px 15px grey;
+    padding: 50px;
+    margin: 20px;
+    padding-left: 300px;
+}
+/* Example work card */
+.work-card {
+    background-color:rgb(40, 97, 133);
+    color: White;
+    border-radius: 15px;
+    box-shadow: 0 10px 15px grey;
+    padding: 20px;
+    margin: 20px;
+}
+/* when hovering over a card it gets bigger */
+.work-card:hover {
+    transform: scale(1.1);
+}
+/* Only edits pproject 1 card */
+#project1 {
+    font-size:xx-large;
+
+}
+/* Puppy Image */
+.placeholderImg {
+    width: 200px;
+    height: 200px;
+}
