@@ -33,6 +33,10 @@ ul.navbar li {
     font-size: xx-large;
     
 }
+/* makes the links default color white so they dont show up purple on mobile */
+ul.navbar li a {
+    color: gainsboro !important;
+}
 /* makes it so navbar links dont turn purple */
 ul.navbar li a:visited {
     color: gainsboro !important;
