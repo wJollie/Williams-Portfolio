@@ -35,7 +35,7 @@ ul.navbar li {
 }
 /* makes it so navbar links dont turn purple */
 ul.navbar li a:visited {
-    color: gainsboro;
+    color: gainsboro !important;
 }
 /* Card Style for Contact me and Bio */
 .card {
