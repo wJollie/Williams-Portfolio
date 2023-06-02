@@ -55,22 +55,22 @@ ul.navbar li a:visited {
 .example-card {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
+    justify-content: center;
     background-color: gainsboro;
     border-radius: 15px;
     box-shadow: 0 10px 15px grey;
     padding: 50px;
     margin: 20px;
-    padding-left: 300px;
 }
 /* Example work card */
 .work-card {
     background-color:rgb(40, 97, 133);
     color: White;
-    border-radius: 15px;
+    border-radius: 25px;
     box-shadow: 0 10px 15px grey;
     padding: 20px;
-    margin: 20px;
+    margin: 10px;
+    
 }
 /* when hovering over a card it gets bigger */
 .work-card:hover {
@@ -85,4 +85,9 @@ ul.navbar li a:visited {
 .placeholderImg {
     width: 200px;
     height: 200px;
+}
+@media screen and (max-width: 845px) {
+    ul.navbar li {
+        font-size: small;
+    }
 }
