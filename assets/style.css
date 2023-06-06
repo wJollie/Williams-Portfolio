@@ -93,9 +93,20 @@
     height: 200px;
   }
   /* makes the navbar shrink when screen shrinks */
-  @media screen and (max-width: 845px) {
+  @media screen and (max-width: 819px) {
     ul.navbar li {
-      font-size: small;
+      font-size: medium;
+      margin-right: 25px;
+      border: 2px solid var(--white);
+    }
+    .card {
+      height: auto;
+      width: 200px;
+    }
+    .placeholderImg {
+      width: 100px;
+      height: 100px;
+
     }
   }
   
