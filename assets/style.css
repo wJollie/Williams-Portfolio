@@ -1,97 +1,101 @@
 * {
     margin: 0;
     padding: 0;
-}
-/* Website Title and Blue Bar at top */
-header {
+  }
+  /* global variables */
+  :root {
+    --gradient: linear-gradient(to bottom, rgb(40, 97, 133),rgb(15, 37, 51)  );
+    --revGradient: linear-gradient(to top, rgb(58, 140, 190),rgb(20, 50, 68)  );
+    --white: gainsboro;
+  }
+  /* Body Styling */
+  body {
+    background: var(--revGradient);
+    padding: 10px;
+  }
+  /* Style for the header */
+  header {
     display: flex;
-    flex-direction: row;
     justify-content: flex-start;
-    background-color: rgb(40, 97, 133);
-    color: gainsboro;
+    color: var(--white);
     font-size: xx-large;
-    
-}
-/* top pfp style */
-#top-pfp {
+  }
+  /* The PFP on the top of the page */
+  #top-pfp {
     width: 50px;
     height: 50px;
     padding: 10px;
-}
-/* untitled list navbar style */
-ul.navbar {
+  }
+  /* Navbar styling */
+  ul.navbar {
     display: flex;
     justify-content: flex-end;
     padding: 0;
     margin: 0;
-    background-color: rgb(40, 97, 133);
-    color: gainsboro;
-}
-/* list item navbar style */
-ul.navbar li {
+    color: var(--white);
+  }
+  /* list item in navbar styling */
+  ul.navbar li {
     margin-right: 75px;
     font-size: xx-large;
-    
-}
-/* makes the links default color white so they dont show up purple on mobile */
-ul.navbar li a {
-    color: gainsboro !important;
-}
-/* makes it so navbar links dont turn purple */
-ul.navbar li a:visited {
-    color: gainsboro !important;
-}
-/* Card Style for Contact me and Bio */
-.card {
-    background-color: gainsboro;
+    list-style-type: none;
+  }
+  /* navbar list items with link styling */
+  ul.navbar li a {
+    color: var(--white) !important;
+  }
+  /* makes the color white after clicking link */
+  ul.navbar li a:visited {
+    color: var(--white) !important;
+  }
+  /* card template styling */
+  .card {
+    background-color: var(--white);
     border-radius: 15px;
-    box-shadow: 0 10px 15px grey;
+    box-shadow: 0 10px 15px rgb(21, 50, 68);
     padding: 50px;
     margin: 20px;
-}
-/* Header Text for example card */
-.sectionHeader {
+  }
+  /* section header styling */
+  .sectionHeader {
     padding-right: 20px;
     font-size: xx-large;
-}
-
-/* The Card holding the example work cards */
-.example-card {
+  }
+  /* card holding work cards invisible for formatting */
+  .example-card {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    background-color: gainsboro;
-    border-radius: 15px;
-    box-shadow: 0 10px 15px grey;
+    background-color: var(--white);
     padding: 50px;
     margin: 20px;
-}
-/* Example work card */
-.work-card {
-    background-color:rgb(40, 97, 133);
-    color: White;
+  }
+  /* cards that have the projects */
+  .work-card {
+    background: var(--gradient);
+    color: var(--white);
     border-radius: 25px;
     box-shadow: 0 10px 15px grey;
     padding: 20px;
     margin: 10px;
-    
-}
-/* when hovering over a card it gets bigger */
-.work-card:hover {
+  }
+  /* makes the cards grow when hovering over them */
+  .work-card:hover {
     transform: scale(1.1);
-}
-/* Only edits pproject 1 card */
-#project1 {
-    font-size:xx-large;
-
-}
-/* Puppy Image */
-.placeholderImg {
+  }
+  /* makes the first project bigger than the others */
+  #project1 {
+    font-size: xx-large;
+  }
+  /* puppy image */
+  .placeholderImg {
     width: 200px;
     height: 200px;
-}
-@media screen and (max-width: 845px) {
+  }
+  /* makes the navbar shrink when screen shrinks */
+  @media screen and (max-width: 845px) {
     ul.navbar li {
-        font-size: small;
+      font-size: small;
     }
-}
+  }
+  
