@@ -1,112 +1,178 @@
+/* Reset some default styles */
 * {
-    margin: 0;
-    padding: 0;
-  }
-  /* global variables */
-  :root {
-    --gradient: linear-gradient(to bottom, rgb(40, 97, 133),rgb(15, 37, 51)  );
-    --revGradient: linear-gradient(to top, rgb(58, 140, 190),rgb(20, 50, 68)  );
-    --white: gainsboro;
-  }
-  /* Body Styling */
-  body {
-    background: var(--revGradient);
-    padding: 10px;
-  }
-  /* Style for the header */
-  header {
-    display: flex;
-    justify-content: flex-start;
-    color: var(--white);
-    font-size: xx-large;
-  }
-  /* The PFP on the top of the page */
-  #top-pfp {
-    width: 50px;
-    height: 50px;
-    padding: 10px;
-  }
-  /* Navbar styling */
-  ul.navbar {
-    display: flex;
-    justify-content: flex-end;
-    padding: 0;
-    margin: 0;
-    color: var(--white);
-  }
-  /* list item in navbar styling */
-  ul.navbar li {
-    margin-right: 75px;
-    font-size: xx-large;
-    list-style-type: none;
-  }
-  /* navbar list items with link styling */
-  ul.navbar li a {
-    color: var(--white) !important;
-  }
-  /* makes the color white after clicking link */
-  ul.navbar li a:visited {
-    color: var(--white) !important;
-  }
-  /* card template styling */
-  .card {
-    background-color: var(--white);
-    border-radius: 15px;
-    box-shadow: 0 10px 15px rgb(21, 50, 68);
-    padding: 50px;
-    margin: 20px;
-  }
-  /* section header styling */
-  .sectionHeader {
-    padding-right: 20px;
-    font-size: xx-large;
-  }
-  /* card holding work cards invisible for formatting */
-  .example-card {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    background-color: var(--white);
-    padding: 50px;
-    margin: 20px;
-  }
-  /* cards that have the projects */
-  .work-card {
-    background: var(--gradient);
-    color: var(--white);
-    border-radius: 25px;
-    box-shadow: 0 10px 15px grey;
-    padding: 20px;
-    margin: 10px;
-  }
-  /* makes the cards grow when hovering over them */
-  .work-card:hover {
-    transform: scale(1.1);
-  }
-  /* makes the first project bigger than the others */
-  #project1 {
-    font-size: xx-large;
-  }
-  /* puppy image */
-  .placeholderImg {
-    width: 200px;
-    height: 200px;
-  }
-  /* makes the navbar shrink when screen shrinks */
-  @media screen and (max-width: 819px) {
-    ul.navbar li {
-      font-size: medium;
-      margin-right: 25px;
-      border: 2px solid var(--white);
-    }
-    .card {
-      height: auto;
-      width: 200px;
-    }
-    .placeholderImg {
-      width: 100px;
-      height: 100px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-    }
+/* global variables */
+:root {
+  --gradient: linear-gradient(to bottom, #285d85, #0f2533);
+  --revGradient: linear-gradient(to top, #3a8cba, #143244);
+  --white: #f0f0f0;
+}
+
+/* Body Styling */
+body {
+  background: var(--revGradient);
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+/* Style for the header */
+header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: var(--white);
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+/* The PFP on the top of the page */
+#top-pfp {
+  width: 50px;
+  height: 50px;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+/* Navbar styling */
+ul.navbar {
+  display: flex;
+  justify-content: flex-end;
+  color: var(--white);
+  list-style-type: none;
+}
+
+/* list item in navbar styling */
+ul.navbar li {
+  margin-right: 30px;
+  font-size: 1.2rem;
+}
+
+/* navbar list items with link styling */
+ul.navbar li a {
+  color: var(--white);
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+/* Change link color on hover */
+ul.navbar li a:hover {
+  color: #d5d5d5;
+}
+
+/* card template styling */
+.card {
+  background-color: var(--white);
+  border-radius: 15px;
+  box-shadow: 0 10px 15px rgba(21, 50, 68, 0.4);
+  padding: 30px;
+  margin-bottom: 20px;
+}
+
+/* section header styling */
+.sectionHeader {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+
+/* Bio Card */
+#bio img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.bio-text {
+  list-style-type: disc;
+  margin-left: 20px;
+  margin-bottom: 15px;
+}
+
+/* Work Example Card */
+.example-card {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+h3 {
+  font-size: x-large;
+}
+
+.work-card {
+  background: var(--gradient);
+  color: var(--white);
+  border-radius: 15px;
+  box-shadow: 0 10px 15px rgba(68, 136, 187, 0.6);
+  padding: 20px;
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.work-card:hover {
+  transform: scale(1.05);
+}
+
+.placeholderImg {
+  max-width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Contact Me Card */
+#contact ul {
+  list-style-type: none;
+  margin-left: 20px;
+}
+
+#contact li {
+  margin-bottom: 10px;
+}
+
+#contact a {
+  color: #3a8cba;
+  text-decoration: none;
+}
+
+#contact a:hover {
+  text-decoration: underline;
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+  header {
+    font-size: 1.5rem;
   }
-  
+
+  #top-pfp {
+    width: 40px;
+    height: 40px;
+  }
+
+  ul.navbar li {
+    margin-right: 20px;
+    font-size: 1rem;
+  }
+
+  .card {
+    padding: 20px;
+  }
+
+  #bio img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .sectionHeader {
+    font-size: 1.5rem;
+  }
+
+  .placeholderImg {
+    height: 150px;
+  }
+}
